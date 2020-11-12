@@ -10,7 +10,7 @@ pipeline {
 
     stage('clean') {
       steps {
-        echo '$env'
+        echo 'echo ${M2_HOME}'
       }
     }
 
