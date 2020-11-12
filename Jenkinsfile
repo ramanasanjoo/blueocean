@@ -19,7 +19,6 @@ pipeline {
       steps {
         pwd(tmp: true)
         readFile 'pom.xml'
-        dir(path: 'C:\\Users\\Ramana\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\blueocean_pipelineblueocean')
       }
     }
 
