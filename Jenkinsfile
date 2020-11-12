@@ -8,10 +8,16 @@ pipeline {
       }
     }
 
-    stage('clean') {
+    stage('CheckOut') {
       steps {
         echo 'echo ${M2_HOME}'
         git(url: 'https://github.com/ramanasanjoo/simple-java-maven-app.git', branch: 'master')
+      }
+    }
+
+    stage('Clean/Install') {
+      steps {
+        sh 'mvn clean install'
       }
     }
 
