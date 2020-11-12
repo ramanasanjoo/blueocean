@@ -8,5 +8,11 @@ pipeline {
       }
     }
 
+    stage('clean') {
+      steps {
+        echo '$env'
+      }
+    }
+
   }
 }
