@@ -17,7 +17,14 @@ pipeline {
 
     stage('Clean/Install') {
       steps {
-        sh 'mvn clean install'
+        sh '''
+cd C:\\Users\\Ramana\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\blueocean_pipelineblueocean
+
+
+
+ 
+
+mvn clean install'''
       }
     }
 
