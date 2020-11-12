@@ -11,7 +11,7 @@ pipeline {
     stage('clean') {
       steps {
         echo 'echo ${M2_HOME}'
-        bat 'mvn clean'
+        git(url: 'https://github.com/ramanasanjoo/simple-java-maven-app.git', branch: 'master')
       }
     }
 
