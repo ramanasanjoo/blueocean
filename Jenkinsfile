@@ -11,6 +11,7 @@ pipeline {
     stage('clean') {
       steps {
         echo 'echo ${M2_HOME}'
+        bat 'mvn clean'
       }
     }
 
